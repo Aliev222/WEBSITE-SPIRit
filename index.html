@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Clicker game landing page with heroes, community links, and instant access.">
+  <title>Clicker Game Landing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="site-shell">
+    <header class="topbar">
+      <a class="topbar__brand" href="#home" aria-label="Go to homepage">
+        <span class="topbar__dot" aria-hidden="true"></span>
+        <span id="brandMark">Brand Name</span>
+      </a>
+
+      <div class="topbar__actions">
+        <a class="topbar__link" href="#socials">Community</a>
+        <a class="button button--ghost" id="headerPrimaryLink" href="#" target="_blank" rel="noreferrer">Play Now</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero__backdrop" aria-hidden="true">
+          <span class="hero__ring hero__ring--one"></span>
+          <span class="hero__ring hero__ring--two"></span>
+          <span class="hero__stamp">clicker game / live</span>
+        </div>
+
+        <div class="hero__grid">
+          <div class="hero__content reveal" data-reveal="up">
+            <p class="eyebrow">Idle Clicker Game</p>
+            <h1 class="hero__title" id="heroBrandName">Brand Name</h1>
+            <p class="hero__tagline" id="heroTagline">
+              Build your run, upgrade faster, and unlock heroes from the first tap.
+            </p>
+            <p class="hero__subline">tap / upgrade / collect / dominate</p>
+
+            <div class="hero__actions">
+              <a class="button button--primary" id="heroPrimaryLink" href="#" target="_blank" rel="noreferrer">Play Now</a>
+              <a class="button button--ghost" href="#socials">Join Community</a>
+            </div>
+
+            <div class="hero__summary">
+              <p id="heroDescription">
+                Start clicking, stack your resources, evolve your squad, and follow every game update from one screen.
+              </p>
+            </div>
+          </div>
+
+          <div class="hero__visual reveal" data-reveal="left" aria-label="Game heroes">
+            <div class="hero__visual-mark" aria-hidden="true">01 / 02</div>
+            <div class="characters-showcase">
+              <article class="character-panel character-panel--primary">
+                <div class="character-panel__meta">
+                  <span>Spirit Stop</span>
+                  <span>Starter Unit</span>
+                </div>
+                <div class="character-panel__frame">
+                  <!-- Put your first background image here: assets/images/character-bg-1.jpg -->
+                  <div class="character-panel__bg" id="characterBgOne" aria-hidden="true"></div>
+                  <!-- Put your first PNG here: assets/images/character-1.png -->
+                  <img
+                    id="characterOne"
+                    class="character-image"
+                    src="assets/images/character-1.png"
+                    alt="Main hero of the clicker game"
+                    data-fallback-label="Hero One"
+                  >
+                </div>
+              </article>
+
+              <article class="character-panel character-panel--secondary">
+                <div class="character-panel__meta">
+                  <span>Spirit Gorpcore</span>
+                  <span>Rare Unit</span>
+                </div>
+                <div class="character-panel__frame">
+                  <!-- Put your second background image here: assets/images/character-bg-2.jpg -->
+                  <div class="character-panel__bg" id="characterBgTwo" aria-hidden="true"></div>
+                  <!-- Put your second PNG here: assets/images/character-2.png -->
+                  <img
+                    id="characterTwo"
+                    class="character-image"
+                    src="assets/images/character-2.png"
+                    alt="Second hero of the clicker game"
+                    data-fallback-label="Hero Two"
+                  >
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="socials section" id="socials">
+        <div class="section-heading reveal" data-reveal="up">
+          <p class="eyebrow">Game Community</p>
+          <h2>All game links, updates, and channels in one place.</h2>
+          <p class="section-copy" id="socialsDescription">
+            Follow patches, events, sneak peeks, and community drops without leaving the hub.
+          </p>
+        </div>
+
+        <div class="socials-grid" id="socialLinks" aria-label="Social links list">
+          <!-- Filled by script.js -->
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer section">
+      <div class="footer__row reveal" data-reveal="up">
+        <div>
+          <p class="eyebrow">Game Hub</p>
+          <h2 id="footerBrandName">Brand Name</h2>
+          <p id="footerTagline">Idle progression, collectible heroes, and a live player community.</p>
+        </div>
+
+        <div class="footer__links">
+          <a id="footerTelegram" href="#" target="_blank" rel="noreferrer">Telegram</a>
+          <a id="footerInstagram" href="#" target="_blank" rel="noreferrer">Instagram</a>
+          <a id="footerTiktok" href="#" target="_blank" rel="noreferrer">TikTok</a>
+        </div>
+      </div>
+
+      <div class="footer__bottom reveal" data-reveal="up">
+        <p id="footerCopyright">(c) 2026 Brand Name. All rights reserved.</p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
