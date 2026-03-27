@@ -1,7 +1,7 @@
 const brandConfig = {
   brandName: "SPIRIT",
   tagline: "Нажимай, улучшай героев и продвигайся всё дальше с каждой новой игровой сессией.",
-  description: "Каждую неделю в Spirit Cliker начинается новая гонка. Поднимайся по рангам от бронзы до алмаза, попадай в топ-50 своего дивизиона и забирай Telegram Stars. Чем выше лига — тем выше ставки и крупнее призовой фонд.",
+  description: "Каждую неделю в Spirit Clicker начинается новая гонка. Поднимайся по рангам от бронзы до алмаза, попадай в топ-50 своего дивизиона и забирай Telegram Stars. Чем выше лига — тем выше ставки и крупнее призовой фонд.",
   primaryLink: "https://t.me/Ryoho_bot",
   characters: {
     primaryBackground: "assets/images/character-bg-1.jpg",
@@ -19,8 +19,8 @@ const brandConfig = {
     },
     {
       name: "Instagram",
-      handle: "@spirit_cliker",
-      href: "https://www.instagram.com/spirit_cliker/",
+      handle: "@spirit_clicker",
+      href: "https://www.instagram.com/spirit_clicker/",
       description: "Анонсы героев, визуальные тизеры, игровые арты и контент проекта.",
       icon: "instagram",
     },
@@ -40,7 +40,7 @@ const brandConfig = {
     },
     {
       name: "YouTube",
-      handle: "@Spirit Cliker",
+      handle: "@Spirit Clicker",
       href: "https://youtube.com/@spirit-cliker?si=N2XgQemGQW90aWjN",
       description: "Трейлеры, devlog-видео, гайды, игровые события и длинный формат контента.",
       icon: "youtube",
