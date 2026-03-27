@@ -1,7 +1,7 @@
 const brandConfig = {
   brandName: "SPIRIT",
-  tagline: "Tap, upgrade, unlock heroes, and push your clicker run further every session.",
-  description: "Jump into SPIRIT, click for tokens, invite friends, boost your level, unlock fresh skins, clear mini-games, and keep your run growing every time you play.",
+  tagline: "Нажимай, улучшай героев и продвигайся всё дальше с каждой новой игровой сессией.",
+  description: "Каждую неделю в Spirit Cliker начинается новая гонка. Поднимайся по рангам от бронзы до алмаза, попадай в топ-50 своего дивизиона и забирай Telegram Stars. Чем выше лига — тем выше ставки и крупнее призовой фонд.",
   primaryLink: "https://t.me/Ryoho_bot",
   characters: {
     primaryBackground: "assets/images/character-bg-1.jpg",
@@ -14,42 +14,42 @@ const brandConfig = {
       name: "Telegram",
       handle: "@Spirix",
       href: "https://t.me/Ryoho_bot",
-      description: "Play access, quick links, direct messages, and core game communication.",
+      description: "Быстрый вход в игру, основные ссылки, сообщения и прямая связь с проектом.",
       icon: "telegram",
     },
     {
       name: "Instagram",
       handle: "@spirit_cliker",
       href: "https://www.instagram.com/spirit_cliker/",
-      description: "Hero reveals, visual teasers, event art, and polished game content.",
+      description: "Анонсы героев, визуальные тизеры, игровые арты и контент проекта.",
       icon: "instagram",
     },
     {
       name: "TikTok",
       handle: "@your_brand",
       href: "https://tiktok.com/@your_brand",
-      description: "Fast clips, upgrade moments, funny runs, and short viral gameplay edits.",
+      description: "Короткие ролики, прокачка, забавные моменты и вирусные игровые клипы.",
       icon: "tiktok",
     },
     {
       name: "X / Twitter",
       handle: "@your_brand",
       href: "https://x.com/your_brand",
-      description: "Patch notes, announcements, maintenance alerts, and fast news posts.",
+      description: "Патчноуты, анонсы, технические уведомления и быстрые новости по игре.",
       icon: "x",
     },
     {
       name: "YouTube",
       handle: "@Spirit Cliker",
       href: "https://youtube.com/@spirit-cliker?si=N2XgQemGQW90aWjN",
-      description: "Trailers, devlogs, guides, event recaps, and long-form game content.",
+      description: "Трейлеры, devlog-видео, гайды, игровые события и длинный формат контента.",
       icon: "youtube",
     },
     {
-      name: "Telegram Channel",
+      name: "Telegram Канал",
       handle: "@Spirit Clicker",
       href: "https://t.me/Spirit_cliker",
-      description: "Launch news, event calendars, reward drops, and public player updates.",
+      description: "Новости запуска, игровые события, дропы наград и обновления для игроков.",
       icon: "telegram",
     },
   ],
@@ -117,7 +117,7 @@ function applyImage(imageId, src) {
     image.classList.add("is-missing");
     if (frame) {
       frame.classList.add("is-empty");
-      frame.dataset.placeholder = image.dataset.fallbackLabel || "Add PNG";
+      frame.dataset.placeholder = image.dataset.fallbackLabel || "Добавьте PNG";
     }
   };
 
@@ -203,19 +203,19 @@ function renderSocialLinks() {
 }
 
 function applyBrandContent() {
-  document.title = `${brandConfig.brandName} | Clicker Game`;
+  document.title = `${brandConfig.brandName} | Игра-Кликер`;
 
   setText("brandMark", brandConfig.brandName);
   setText("heroBrandName", brandConfig.brandName);
   setText("heroTagline", brandConfig.tagline);
   setText("heroDescription", brandConfig.description);
-  setText("socialsDescription", "Follow patches, events, sneak peeks, and community drops without leaving the hub.");
+  setText("socialsDescription", "Следи за патчами, событиями, новостями и активностью сообщества в одном месте.");
   setText("footerBrandName", brandConfig.brandName);
   setText("footerTagline", brandConfig.tagline);
-  setText("footerCopyright", `(c) ${new Date().getFullYear()} ${brandConfig.brandName}. All rights reserved.`);
+  setText("footerCopyright", `(c) ${new Date().getFullYear()} ${brandConfig.brandName}. Все права защищены.`);
 
-  setLink("headerPrimaryLink", brandConfig.primaryLink, "Play Now");
-  setLink("heroPrimaryLink", brandConfig.primaryLink, "Play Now");
+  setLink("headerPrimaryLink", brandConfig.primaryLink, "Играть сейчас");
+  setLink("heroPrimaryLink", brandConfig.primaryLink, "Играть сейчас");
 
   const telegram = brandConfig.socials.find((item) => item.name === "Telegram") || brandConfig.socials[0];
   const instagram = brandConfig.socials.find((item) => item.name === "Instagram") || brandConfig.socials[1];
